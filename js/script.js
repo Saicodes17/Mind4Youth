@@ -1,6 +1,6 @@
 // ---------- Officer data (rendered on the Home page only) ----------
 const officers = [
-  { name: "Caleb Molina", role: "Co-President", color: "#E85C8A", photo: "assets/caleb-molina-2026.png" },
+  { name: "Caleb Molina", role: "Co-President", color: "#E85C8A", photo: "assets/caleb-molina.png" },
   { name: "Max H", role: "Co-President", color: "#C43F6C", defaultAvatar: true },
   { name: "Sharanya Nallajerla", role: "Vice President", color: "#6E8C64" },
   { name: "Vivian Wu", role: "Vice President", color: "#6E8C64" },
