@@ -90,12 +90,12 @@
 
   @media (max-width:880px){
     nav.pillnav{
-      display:none; position:absolute; top:64px; left:16px; right:16px;
+      display:none; position:absolute; top:calc(100% + 8px); left:16px; right:16px;
       flex-direction:column; background:var(--white); box-shadow:var(--shadow);
       border-radius:16px; padding:10px;
     }
     nav.pillnav.open{display:flex;}
-    nav.pillnav button{text-align:left;}
+    nav.pillnav a{text-align:left;}
     .nav-toggle{display:flex;}
   }
 
@@ -186,8 +186,32 @@
     .grid-4{grid-template-columns:1fr 1fr;}
   }
   @media (max-width:560px){
+    .topbar-inner{padding:12px 16px; gap:12px;}
+    .brand{gap:8px; font-size:1rem; min-width:0;}
+    .brand .sub{font-size:0.56rem; letter-spacing:0.1em;}
+    nav.pillnav{left:12px; right:12px;}
+    .wrap{padding:0 16px;}
+    .hero{padding:48px 0 6px;}
+    .block{padding:48px 0;}
+    .block-tight{padding:32px 0;}
+    .card,.form-shell{padding:22px;}
+    .wellness-card{padding:22px; border-radius:22px;}
+    .action-card{padding:22px;}
+    .donate-hero{padding:26px 22px; border-radius:24px; gap:28px;}
+    .donate-art{width:min(100%,220px);}
+    .partner-card{padding:22px;}
+    .partner-cta{padding:24px;}
+    .check-grid{grid-template-columns:1fr;}
+    .hero-actions{margin-top:22px;}
+    .social-row{margin-top:20px;}
     .grid-3{grid-template-columns:1fr;}
     .grid-4{grid-template-columns:1fr;}
+  }
+
+  @media (max-width:360px){
+    .brand .sub{display:none;}
+    .btn{padding:12px 20px;}
+    .social-chip{padding-right:13px;}
   }
 
   /* About */
