@@ -7,7 +7,7 @@ const officers = [
   { name: "Shresta Bethi", role: "Events & Campaign Coordinator", color: "#F2B84B", photo: "assets/shresta-bethi.jpeg" },
   { name: "Sai Viswanath Rajendranath Prabhu", role: "Director of Volunteering & Head of Web Development", color: "#2E1B2E", photo: "assets/sai-viswanath-rajendranath-prabhu.png" },
   { name: "Grace Molina", role: "Social Media & Content Creation Officer", color: "#E85C8A", photo: "assets/grace-molina.jpeg" },
-  { name: "Adwita Nambiar", role: "Assistant Director of Content Creation", color: "#C43F6C" },
+  { name: "Adwita Nambiar", role: "Assistant Director of Content Creation", color: "#C43F6C", photo: "assets/adwita-nambiar.jpg", photoPosition: "center 64%" },
 ];
 
 function initials(name){
@@ -20,7 +20,7 @@ if (grid) {
     const div = document.createElement("div");
     div.className = "officer";
     div.innerHTML = `
-      <div class="avatar${o.defaultAvatar ? " default-avatar" : ""}" style="background:${o.defaultAvatar ? "" : o.color}">${o.photo ? `<img src="${o.photo}" alt="${o.name}">` : o.defaultAvatar ? `<svg viewBox="0 0 56 56" aria-label="Default profile avatar" role="img"><circle cx="28" cy="21" r="10" fill="#A39AA3"/><path d="M10 51c1.8-11 9.2-17 18-17s16.2 6 18 17" fill="#A39AA3"/></svg>` : initials(o.name)}</div>
+      <div class="avatar${o.defaultAvatar ? " default-avatar" : ""}" style="background:${o.defaultAvatar ? "" : o.color}">${o.photo ? `<img src="${o.photo}" alt="${o.name}" style="object-position:${o.photoPosition || "center 35%"}">` : o.defaultAvatar ? `<svg viewBox="0 0 56 56" aria-label="Default profile avatar" role="img"><circle cx="28" cy="21" r="10" fill="#A39AA3"/><path d="M10 51c1.8-11 9.2-17 18-17s16.2 6 18 17" fill="#A39AA3"/></svg>` : initials(o.name)}</div>
       <h4>${o.name}</h4>
       <div class="role">${o.role}</div>
     `;
