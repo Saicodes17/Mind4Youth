@@ -5,7 +5,7 @@ const officers = [
   { name: "Sharanya Nallajerla", role: "Vice President", color: "#6E8C64", photo: "assets/sharanya-nallajerla.jpeg" },
   { name: "Vivian Wu", role: "Vice President", color: "#6E8C64", photo: "assets/vivian-wu.jpeg" },
   { name: "Shresta Bethi", role: "Events & Campaign Coordinator", color: "#F2B84B", photo: "assets/shresta-bethi.jpeg" },
-  { name: "Sai Viswanath Rajendranath Prabhu", role: "Director of Volunteering & Head of Web Development", color: "#2E1B2E", photo: "assets/sai-viswanath-rajendranath-prabhu.png" },
+  { name: "Sai Viswanath Rajendranath Prabhu", role: "Vice President of Volunteer Operations and Web Development", color: "#2E1B2E", photo: "assets/sai-viswanath-rajendranath-prabhu.png" },
   { name: "Grace Molina", role: "Social Media & Content Creation Officer", color: "#E85C8A", photo: "assets/grace-molina.jpeg" },
   { name: "Adwita Nambiar", role: "Assistant Director of Content Creation", color: "#C43F6C", photo: "assets/adwita-nambiar.jpg", photoPosition: "center 64%" },
 ];
