@@ -308,6 +308,14 @@
   @media (max-width:700px){.articles-coming-soon{grid-template-columns:1fr;}.articles-coming-soon-art{width:180px; grid-row:1;}}
 
   /* Guidelines */
+  .service-hours-callout{display:flex; gap:18px; align-items:center; padding:24px 28px; border:1px solid rgba(232,92,138,.36); border-radius:22px; background:linear-gradient(135deg,var(--pink-pale),#fff8fa 58%,var(--sage-pale)); box-shadow:0 14px 28px -25px rgba(46,27,46,.5);}
+  .service-hours-icon{width:48px; height:48px; flex:0 0 48px; display:grid; place-items:center; border-radius:50%; background:rgba(255,255,255,.8); font-size:1.35rem;}
+  .service-hours-callout h3,.why-contribute h3{margin:0 0 6px; font-size:1.25rem;}
+  .service-hours-callout p,.why-contribute p{margin:0; font-size:.94rem; line-height:1.6;}
+  @media (max-width:560px){.service-hours-callout{align-items:flex-start; padding:22px;}.service-hours-icon{width:42px; height:42px; flex-basis:42px; font-size:1.15rem;}.why-contribute{padding:22px;}}
+  .submission-info{display:grid; gap:20px;}
+  .why-contribute{padding:24px 28px; border-radius:22px; background:var(--sage-pale); border:1px solid rgba(110,140,100,.25);}
+  .why-contribute .authentic-writing{margin-top:14px; padding-top:14px; border-top:1px solid rgba(110,140,100,.25); font-weight:600; color:#3d5236;}
   .guideline-item{display:flex; gap:12px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line);}
   .guideline-item:first-child{border-top:none;}
   .guideline-item svg{flex-shrink:0; margin-top:3px;}
@@ -316,6 +324,7 @@
   form{display:grid; gap:16px;}
   .field label{display:block; font-weight:700; font-size:0.85rem; margin-bottom:6px;}
   .field .hint{font-size:0.78rem; color:#8a748a; margin-top:4px;}
+  .submission-disclaimer{margin:0; color:#7a637a; font-size:.78rem; line-height:1.55;}
   input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], textarea, select{
     width:100%; padding:12px 14px; border-radius:12px; border:1.5px solid var(--line);
     font-family:inherit; font-size:0.95rem; background:var(--white); color:var(--plum);
