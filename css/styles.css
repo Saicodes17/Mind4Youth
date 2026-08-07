@@ -327,7 +327,7 @@
   .field label{display:block; font-weight:700; font-size:0.85rem; margin-bottom:6px;}
   .field .hint{font-size:0.78rem; color:#8a748a; margin-top:4px;}
   .submission-disclaimer{margin:0; color:#7a637a; font-size:.78rem; line-height:1.55;}
-  input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], textarea, select{
+  input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=date], textarea, select{
     width:100%; padding:12px 14px; border-radius:12px; border:1.5px solid var(--line);
     font-family:inherit; font-size:0.95rem; background:var(--white); color:var(--plum);
   }

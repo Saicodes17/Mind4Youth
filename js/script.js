@@ -86,10 +86,14 @@ function wireForm(formId, confirmId, errorId){
   const confirm = document.getElementById(confirmId);
   const error = errorId ? document.getElementById(errorId) : null;
   if (!form || !confirm) return;
+  if (error) error.dataset.defaultMessage = error.textContent;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    if (error) error.classList.remove("show");
+    if (error) {
+      error.classList.remove("show");
+      error.textContent = error.dataset.defaultMessage;
+    }
 
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.disabled = true;
@@ -106,6 +110,9 @@ function wireForm(formId, confirmId, errorId){
         form.reset();
         setTimeout(() => confirm.classList.remove("show"), 6000);
       } else if (error) {
+        const result = await response.json().catch(() => null);
+        const formspreeMessage = result?.errors?.[0]?.message;
+        if (formspreeMessage) error.textContent = `We couldn’t submit this form: ${formspreeMessage}`;
         error.classList.add("show");
       }
     } catch (err) {
