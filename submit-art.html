@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit an Art Piece — Mind4Youth Charlotte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 25.5s-10.5-6.4-10.5-13.9C4.5 7.4 7.8 4.5 11.3 4.5c2.3 0 4.2 1.2 5.2 3 1-1.8 2.9-3 5.2-3 3.5 0 6.8 2.9 6.8 7.1 0 7.5-10.5 13.9-10.5 13.9z" fill="#E85C8A"/></svg>
+      <span>Mind4Youth<span class="sub">Charlotte Chapter</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="#2E1B2E" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="pillnav" id="pillnav">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <div class="nav-menu"><button class="nav-dropdown-toggle" type="button" aria-expanded="false">Get Involved <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nav-dropdown"><a href="submit.html">Submit an Article</a><a href="submit-art.html" class="active">Submit an Art Piece</a></div></div>
+      <div class="nav-menu"><button class="nav-dropdown-toggle" type="button" aria-expanded="false">Youth Voices <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nav-dropdown"><a href="articles.html">Articles</a><a href="gallery.html">Gallery</a></div></div>
+      <a href="join.html">Join</a>
+      <a href="donate.html">Donate</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page active" id="page-submit-art">
+    <div class="block wrap">
+      <div class="gallery-intro">
+        <div>
+          <p class="eyebrow">Submit an art piece</p>
+          <h1>Make room for <em>your art.</em></h1>
+          <p class="lede">Art can say what is hard to put into words. Share original artwork, photography, or digital art that encourages mental health, wellness, positivity, resilience, or healthy mindsets.</p>
+        </div>
+        <div class="gallery-hero-art" aria-hidden="true">
+          <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✿</span><span class="art-spark spark-three">●</span>
+          <svg viewBox="0 0 220 220" fill="none"><path d="M55 139c11-44 39-75 65-75 27 0 47 31 53 75" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M63 144c18 19 40 28 66 28 24 0 43-8 58-24" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="83" cy="108" r="7" fill="currentColor"/><circle cx="142" cy="108" r="7" fill="currentColor"/><path d="M93 135c11 10 25 10 36 0" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+
+      <aside class="service-hours-callout gallery-hours" aria-labelledby="gallery-hours-title">
+        <div class="service-hours-icon" aria-hidden="true">🎨</div>
+        <div><h2 id="gallery-hours-title">Earn volunteer hours for sharing your creativity</h2><p>Each original piece accepted for the Mind4Youth Gallery earns <strong>2 volunteer hours</strong>. Pieces are reviewed before being featured.</p></div>
+      </aside>
+
+      <div class="gallery-guidelines" aria-label="Artwork submission guidelines">
+        <div class="gallery-guideline-card"><span aria-hidden="true">✦</span><h2>Original work</h2><p>Please submit art, photography, or digital work that you created yourself.</p></div>
+        <div class="gallery-guideline-card"><span aria-hidden="true">♡</span><h2>Share a hopeful message</h2><p>We welcome pieces that promote wellness, resilience, positivity, or healthy mindsets.</p></div>
+        <div class="gallery-guideline-card"><span aria-hidden="true">↗</span><h2>Tell us about it</h2><p>Include a short, 1–3 sentence description that shares the idea or feeling behind your piece.</p></div>
+      </div>
+
+      <div class="gallery-submission grid-2">
+        <div class="gallery-copy card">
+          <p class="eyebrow">Submit a piece</p>
+          <h2>Your perspective belongs here.</h2>
+          <p>There is no single way to express a feeling. A photo, painting, sketch, collage, or digital design can help someone else feel seen—and remind them that hope takes many forms.</p>
+          <p class="gallery-note">Selected work may be shared in our online gallery or on Mind4Youth Charlotte social media, with credit to you unless you request to remain anonymous.</p>
+        </div>
+
+        <div class="form-shell">
+          <form id="galleryForm" action="https://formspree.io/f/xppaqwoa" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="submission_type" value="Gallery artwork submission">
+            <div class="field">
+              <label for="g-title">Title of your piece</label>
+              <input type="text" id="g-title" name="title" required>
+            </div>
+            <div class="field">
+              <label for="g-name">Your name</label>
+              <input type="text" id="g-name" name="name" placeholder="Optional — leave blank to be featured anonymously.">
+            </div>
+            <div class="field">
+              <label for="g-email">Email</label>
+              <input type="email" id="g-email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="g-medium">Type of piece</label>
+              <select id="g-medium" name="medium" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Traditional artwork</option>
+                <option>Photography</option>
+                <option>Digital art</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="g-artwork">Upload your piece</label>
+              <p class="hint">Upload a JPG, PNG, or PDF of your original work.</p>
+              <input type="file" id="g-artwork" name="artwork" accept="image/jpeg,image/png,application/pdf" required>
+            </div>
+            <div class="field">
+              <label for="g-description">About your piece</label>
+              <p class="hint">In 1–3 sentences, tell us what inspired it or the message you hope it shares.</p>
+              <textarea id="g-description" name="description" required></textarea>
+            </div>
+            <label class="check-row"><input type="checkbox" name="original_work_confirmation" required> I confirm this is my original work and I have permission to submit it.</label>
+            <button class="btn btn-primary" type="submit">Submit Your Artwork</button>
+            <p class="submission-disclaimer">By submitting, you agree that Mind4Youth Charlotte may review and feature your piece, with credit unless you request anonymity.</p>
+            <div class="confirm" id="galleryConfirm"><strong>Thank you!</strong><br>Your artwork has been submitted successfully and is now being reviewed. We appreciate your creativity.</div>
+            <div class="confirm confirm-error" id="galleryError">Something went wrong sending that — please try again or contact us directly.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about"><a class="footer-brand" href="index.html">Mind4Youth <span>Charlotte Chapter</span></a><p>Mind4Youth is a 501(c)(3) nonprofit organization fiscally sponsored by The Hack Foundation. Our EIN is 81-2908499.</p></div>
+    <div class="footer-links"><a href="contact.html">Contact</a><a href="index.html#about">About Us</a><a href="join.html">Join Us</a><a href="donate.html">Donate</a><a href="articles.html">Articles</a><a href="gallery.html">Gallery</a></div>
+    <div class="footer-social"><a href="https://www.instagram.com/mind4youth.charlottenc/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>Instagram</a><a href="https://www.linkedin.com/company/mind4youth-charlotte-chapter/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3A1.5 1.5 0 1 0 4.5 6a1.5 1.5 0 0 0 0-3ZM3.2 8h2.6v13H3.2zM8 8h2.5v1.8h.1c.5-1.1 1.8-2.2 3.8-2.2 2.8 0 4.4 1.8 4.4 5.2V21h-2.6v-7.8c0-2-.8-3.2-2.4-3.2-1.8 0-2.9 1.2-2.9 3.5V21H8z"/></svg>LinkedIn</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>

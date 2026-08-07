@@ -38,6 +38,30 @@ if (pillnav && navToggle) {
   });
 }
 
+// ---------- Navigation dropdowns ----------
+document.querySelectorAll(".nav-dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    const menu = toggle.closest(".nav-menu");
+    const wasOpen = menu.classList.contains("open");
+    document.querySelectorAll(".nav-menu.open").forEach(openMenu => {
+      openMenu.classList.remove("open");
+      openMenu.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "false");
+    });
+    if (!wasOpen) {
+      menu.classList.add("open");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+document.addEventListener("click", event => {
+  if (!event.target.closest(".nav-menu")) {
+    document.querySelectorAll(".nav-menu.open").forEach(menu => {
+      menu.classList.remove("open");
+      menu.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "false");
+    });
+  }
+});
+
 // ---------- Pulse divider animation ----------
 const pulseEls = document.querySelectorAll("[data-pulse]");
 if (pulseEls.length) {
