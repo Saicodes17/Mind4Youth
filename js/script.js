@@ -93,3 +93,4 @@ function wireForm(formId, confirmId, errorId){
 }
 wireForm("articleForm", "articleConfirm", "articleError");
 wireForm("contactForm", "contactConfirm", "contactError");
+wireForm("galleryForm", "galleryConfirm", "galleryError");
