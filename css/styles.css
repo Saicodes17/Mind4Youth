@@ -334,7 +334,7 @@
   .submit-article-intro h1{margin-bottom:18px;}
   .submit-article-intro h1 em{font-style:italic; color:var(--pink-deep); font-weight:500;}
   .submit-article-intro .lede{margin:0;}
-  .submission-layout{align-items:start; margin-top:24px;}
+  .submission-layout{align-items:start; margin-top:40px;}
   .why-contribute{padding:24px 28px; border-radius:22px; background:var(--pink-pale); border:1px solid rgba(232,92,138,.32);}
   .why-contribute .authentic-writing{margin-top:14px; padding-top:14px; border-top:1px solid rgba(232,92,138,.28); font-weight:600; color:var(--pink-deep);}
   .guideline-item{display:flex; gap:12px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line);}
@@ -376,7 +376,7 @@
   @media (max-width:880px){.gallery-intro{grid-template-columns:1fr; gap:28px;}.gallery-hero-art{grid-row:1; width:230px;}.gallery-guidelines{grid-template-columns:1fr;}.gallery-guideline-card{min-height:0;}.gallery-art-grid{grid-template-columns:1fr;}.gallery-submit-cta{align-items:flex-start; flex-direction:column;}}
 
   /* Wide variant for submit-art page to make the requirements tile more stretched out */
-  .gallery-guidelines--wide{display:block; width:100%; box-sizing:border-box;}
+  .gallery-guidelines--wide{display:block; width:100%; box-sizing:border-box; margin-top:28px;}
   .gallery-guidelines--wide .gallery-guideline-card{width:100%; box-sizing:border-box; padding:32px; min-height:320px; border-radius:24px;}
   .gallery-guidelines--wide .gallery-guideline-card h2{font-size:1.3rem; margin-bottom:12px;}
   @media (max-width:880px){
