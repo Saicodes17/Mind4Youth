@@ -124,4 +124,28 @@ function wireForm(formId, confirmId, errorId){
 }
 wireForm("articleForm", "articleConfirm", "articleError");
 wireForm("contactForm", "contactConfirm", "contactError");
-wireForm("galleryForm", "galleryConfirm", "galleryError");
+
+// ---------- Article comments (Utterances via GitHub Issues) ----------
+(function () {
+  const article = document.querySelector(".article-page");
+  if (!article) return;
+
+  const section = document.createElement("section");
+  section.className = "article-comments";
+  section.setAttribute("aria-labelledby", "comments-title");
+  section.innerHTML =
+    '<h2 id="comments-title">Comments</h2>' +
+    '<p class="article-comments-note">Share your thoughts on this piece. Sign in with GitHub to leave a comment.</p>';
+
+  const script = document.createElement("script");
+  script.src = "https://utteranc.es/client.js";
+  script.setAttribute("repo", "Saicodes17/Mind4Youth");
+  script.setAttribute("issue-term", "pathname");
+  script.setAttribute("label", "article-comment");
+  script.setAttribute("theme", "github-light");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+
+  section.appendChild(script);
+  article.appendChild(section);
+})();
