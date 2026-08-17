@@ -330,6 +330,11 @@
   .service-hours-callout p,.why-contribute p{margin:0; font-size:.94rem; line-height:1.6;}
   @media (max-width:560px){.service-hours-callout{align-items:flex-start; padding:22px;}.service-hours-icon{width:42px; height:42px; flex-basis:42px; font-size:1.15rem;}.why-contribute{padding:22px;}}
   .submission-info{display:grid; gap:20px;}
+  .submit-article-intro{margin-bottom:28px;}
+  .submit-article-intro h1{margin-bottom:18px;}
+  .submit-article-intro h1 em{font-style:italic; color:var(--pink-deep); font-weight:500;}
+  .submit-article-intro .lede{margin:0;}
+  .submission-layout{align-items:start; margin-top:24px;}
   .why-contribute{padding:24px 28px; border-radius:22px; background:var(--pink-pale); border:1px solid rgba(232,92,138,.32);}
   .why-contribute .authentic-writing{margin-top:14px; padding-top:14px; border-top:1px solid rgba(232,92,138,.28); font-weight:600; color:var(--pink-deep);}
   .guideline-item{display:flex; gap:12px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line);}
