@@ -370,6 +370,11 @@
   input[type=file]{width:100%; padding:10px; border:1.5px dashed rgba(232,92,138,.5); border-radius:12px; background:#fff8fa; color:var(--plum); font-family:inherit; font-size:.86rem;}.check-row{align-items:flex-start; line-height:1.5;}.check-row input{margin-top:4px;}
   @media (max-width:880px){.gallery-intro{grid-template-columns:1fr; gap:28px;}.gallery-hero-art{grid-row:1; width:230px;}.gallery-guidelines{grid-template-columns:1fr;}.gallery-guideline-card{min-height:0;}.gallery-art-grid{grid-template-columns:1fr;}.gallery-submit-cta{align-items:flex-start; flex-direction:column;}}
 
+  /* Wide variant for submit-art page to make the requirements tile more stretched out */
+  .gallery-guidelines--wide{grid-template-columns:1fr;}
+  .gallery-guidelines--wide .gallery-guideline-card{padding:32px; min-height:260px; border-radius:24px;}
+  .gallery-guidelines--wide .gallery-guideline-card h2{font-size:1.25rem; margin-bottom:10px;}
+
   /* Donate */
   .donate-hero{display:grid; grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr); gap:44px; align-items:center; padding:clamp(30px,6vw,72px); border-radius:32px; background:linear-gradient(135deg,var(--rose),var(--pink-pale) 62%,var(--sage-pale)); overflow:hidden;}
   .donate-copy h1{max-width:660px; margin-bottom:18px;}
