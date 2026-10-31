@@ -289,7 +289,6 @@
   }
   .community-initiatives-heading{margin-bottom:18px;}
   .community-initiatives-heading .eyebrow{margin-bottom:8px;}
-  .community-initiatives-heading h3{font-size:clamp(1.5rem,2.8vw,2rem);}
   .initiative-card{
     display:grid; grid-template-columns:minmax(260px,.92fr) 1.08fr; align-items:stretch;
     overflow:hidden; border:1px solid rgba(232,92,138,.28); border-radius:28px;
