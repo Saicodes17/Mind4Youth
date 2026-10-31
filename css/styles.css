@@ -287,6 +287,29 @@
   .event-placeholder{
     border:2px dashed var(--line); border-radius:20px; padding:36px; text-align:center; color:#7a637a;
   }
+  .community-initiatives-heading{margin-bottom:18px;}
+  .community-initiatives-heading .eyebrow{margin-bottom:8px;}
+  .community-initiatives-heading h3{font-size:clamp(1.5rem,2.8vw,2rem);}
+  .initiative-card{
+    display:grid; grid-template-columns:minmax(260px,.92fr) 1.08fr; align-items:stretch;
+    overflow:hidden; border:1px solid rgba(232,92,138,.28); border-radius:28px;
+    background:linear-gradient(135deg,var(--white) 0%,#fff8fa 60%,var(--sage-pale) 100%);
+    box-shadow:0 16px 32px -26px rgba(46,27,46,.48);
+  }
+  .initiative-card-image{min-height:330px; overflow:hidden; background:var(--rose);}
+  .initiative-card-image img{width:100%; height:100%; object-fit:cover; object-position:center;}
+  .initiative-card-copy{display:flex; flex-direction:column; justify-content:center; padding:clamp(28px,4vw,48px);}
+  .initiative-tag{
+    align-self:flex-start; margin-bottom:16px; padding:6px 12px; border-radius:999px;
+    background:var(--sage-pale); color:#3d5236; font-size:.72rem; font-weight:800;
+    letter-spacing:.1em; text-transform:uppercase;
+  }
+  .initiative-card-copy h3{font-size:clamp(1.6rem,3vw,2.25rem); margin-bottom:14px;}
+  .initiative-card-copy p{max-width:58ch; margin:0;}
+  @media (max-width:700px){
+    .initiative-card{grid-template-columns:1fr;}
+    .initiative-card-image{min-height:0; aspect-ratio:1.15/1;}
+  }
 
   /* Articles */
   .articles-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px;}
